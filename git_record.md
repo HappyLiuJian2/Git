@@ -7,6 +7,8 @@
 ##git commit <file>：1. commit staged file(把在stage区的文件提交)
       
 - git commit <file>    <=>     git reset --soft HEAD^  修改后的文件保持不变，这次commit回退（文件处于stage area）
+
+- git commit <file>    <=>     git reset HEAD^  修改后的文件保持不变，这次commit回退（文件处于unstage area）
                           
 - git commit <file>    <=>     git reset --hard HEAD^  修改后的文件也回退到上一个commit，commit同时回退(删除整个commit，回到上一次状态)
 
